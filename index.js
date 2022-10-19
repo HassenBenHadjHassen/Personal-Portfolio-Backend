@@ -50,6 +50,10 @@ router.post("/contact", (req, res) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("This is the backend for my portfolio");
+});
+
 const port = process.env.PORT || 5500;
 
 app.listen(port, function () {
